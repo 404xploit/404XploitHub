@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slide-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cyberpunk glowing effect on hover */
+.feature-card:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
